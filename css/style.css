@@ -135,13 +135,30 @@ body{
 .forma h1{
   margin-top: 0px;
 }
+
+/* From uiverse.io by @Yaseen549 */
 .forma input, textarea {
-  margin-top: 2px;
   width: 100%;
-  padding: 12px 0px;
+  margin : 5px;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #e8e8e8;
+  box-shadow: 6px 6px 12px #ffffff,
+              -6px -6px 12px #c5c5c5;
+  font-size: medium;
+  font-weight: bold;
+}
+.forma button{
+  margin-top: 10px;
+  border-radius: 0px;
+  background: #f0f0f0;
+  box-shadow:  5px 5px 0px #cccccc,
+               -5px -5px 0px #ffffff;
+font-size: medium;
+font-weight: bold;
+max-width: 200px;
 }
 .kolona {
   float: left;
@@ -190,4 +207,33 @@ body{
 
 .card button:hover {
   opacity: 0.7;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){border-radius: 0px;
+  background: #ffffff;
+  box-shadow: inset 9px 9px 20px #d9d9d9,
+              inset -9px -9px 20px #ffffff;}
+tr:nth-child(odd){border-radius: 0px;
+  background: #f0f0f0;
+  box-shadow: inset 9px 9px 20px #cccccc,
+              inset -9px -9px 20px #ffffff;}
+
+th {
+  background: #AB5A44;
+  box-shadow:  20px 20px 60px #914d3a,
+               -20px -20px 60px #c5684e;
+}
+.centar{
+  /*center the table*/
+  margin: 0 auto;
+  width: 50%;
 }

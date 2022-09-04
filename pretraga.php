@@ -26,7 +26,7 @@ if(isset($_POST['submit']))
     $search = mysqli_real_escape_string($conn, stripslashes($_REQUEST['search']));
     $sql= "SELECT * FROM artikli WHERE Artikl LIKE '%$search%' OR Opis LIKE '%$search%'";
     $result = mysqli_query($conn, $sql);    
-    echo "<table border='1'>";
+    echo "<table border='0'>";
 			while ($row = mysqli_fetch_assoc($result)) {
 			    echo "<tr>";
 			    foreach ($row as $field => $value) {

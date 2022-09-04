@@ -20,21 +20,7 @@ require "includes/db.php";
 <div class="od">
 
 <?php 
-$sql = "SELECT * FROM `artikli`;";
-$result = mysqli_query($conn, $sql);
-$resultCheck = mysqli_num_rows($result);
-if (isset($_REQUEST['submit'])){
-  $query = "INSERT INTO `korpa` (`Artikl`, `Cena`, `user_id`) VALUES ('{$row['Artikl']}', '{$row['Cena']}', '{$_SESSION['id']}')";}
-while($row = $result->fetch_assoc()) {
-    echo '
-<div class="card">
-  <img src="'.$row["Slika"].'" style="width:100%">
-  <h1>'.$row["Artikl"].'</h1>
-  <p class="price">'.$row["Cena"].'RSD</p>
-  <p>'.$row["Opis"].'</p>
-  <form method="post"> <button type="submit" name="submit">Dodaj u korpu</button></form> '.// dodati u novu formu koristeci '.$row["Id"].' '.$row["Artikl"].' '.$row["Cena"].'
-'</div> ' ;
-}   
+include "store1.php"; // ostavljeno kao primer kako se koristi include
 ?>
 
 </div>
